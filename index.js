@@ -118,6 +118,25 @@ const distributeSeats = (seatsMatrix, maxRowsNum, passengers) => {
 };
 
 /**
+ * function prints airplane seats matrix
+ * @param seatsMatrix 3D array represents the actual airplane seats
+ */
+const printSeatsLayout = (seatsMatrix) => {
+  seatsMatrix.forEach((section) => {
+    console.log("============================================================");
+    section.forEach((row) => {
+      row.forEach((col) => {
+        console.log(col);
+        console.log(" | ");
+      });
+      console.log(
+        "------------------------------------------------------------"
+      );
+    });
+  });
+};
+
+/**
  * function handles all the logic for the seating algorithm
  */
 const startSeatingAlgorithm = () => {
@@ -136,11 +155,11 @@ const startSeatingAlgorithm = () => {
     }
     let { seatsMatrix, maxRowsNum } = buildSeatsMatrix(airplaneLayout);
     seatsMatrix = distributeSeats(seatsMatrix, maxRowsNum, passengers);
-    //printSeatsLayout(seatsMatrix);
+    printSeatsLayout(seatsMatrix);
   } catch (error) {
     if (error instanceof SyntaxError) {
       console.error(
-        `Seat layout is invalid, please run the script in the following format: node index.js "[[1,2],[3,6],[2,3],[5,4]]" "30"!`
+        `Seat layout is invalid, please run the script in the following format: node index.js "[[3,2],[4,3],[2,3],[3,4]]" "30"!`
       );
     } else if (error instanceof TypeError) {
       console.error(`Passengers count is not a number!`);
