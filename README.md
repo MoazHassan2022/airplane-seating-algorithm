@@ -27,7 +27,7 @@
   <h4>Follow this article to install node js and npm <a href="https://phoenixnap.com/kb/install-node-js-npm-on-windows">Install Node js and npm.</a></h4>
  </li>
  <li>
-  <h4><code>npm start "[[3,2],[4,3],[2,3],[3,4]]" "30"</code></h4>
+  <h4><code>npm i && npm start "[[3,2],[4,3],[2,3],[3,4]]" "30"</code></h4>
  </li>
  </ol>
 
@@ -36,7 +36,7 @@
   <p>
   A simple Node.js program that gives the seating arrangement of passengers for airplane seat layout with custom conditions.
  </p>
-<p> This program was built for a coding challenge and the requirements file is in <code>documentation/requirements.pdf</code></p>
+<p> This program was built for a coding challenge, you can see the requirements file in <code>documentation/requirements.pdf</code></p>
 <p>
 Rules for seating:
 <ul>
