@@ -1,0 +1,27 @@
+{
+  "name": "airplane-seating-algorithm",
+  "version": "1.0.0",
+  "description": "A simple Node.js program that gives the seating arrangement of passengers for airplane seat layout with custom conditions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "ndb index.js"
+  },
+  "author": "Moaz Mohamed",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": "^16"
+  }
+}
