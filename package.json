@@ -4,7 +4,7 @@
   "description": "A simple Node.js program that gives the seating arrangement of passengers for airplane seat layout with custom conditions.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js \"$1\" \"$2\"",
+    "start": "node index.js",
     "debug": "ndb index.js"
   },
   "author": "Moaz Mohamed",
